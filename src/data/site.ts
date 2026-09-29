@@ -13,8 +13,8 @@ export const profile = {
   ],
   email: 'alvaro.castellarin2003@gmail.com',
   github: 'https://github.com/AlvaroCastellarin',
-  // TODO(Alvaro): pegá la URL de tu perfil de LinkedIn.
-  linkedin: 'https://www.linkedin.com/in/alvaro-castellarin',
+  // Dejalo vacío para ocultarlo; pegá la URL cuando tengas perfil de LinkedIn.
+  linkedin: '',
   // Poné tu CV en public/cv-alvaro-castellarin.pdf y cambiá esto a true.
   hasCv: false,
   cvPath: '/cv-alvaro-castellarin.pdf',
@@ -35,6 +35,21 @@ export const projects: {
   demo?: string;
 }[] = [
   {
+    title: 'MundialQuiz',
+    description:
+      'Juego de trivia sobre la historia de los Mundiales con más de 80 preguntas, sistema de vidas y checkpoints, bonus por velocidad de respuesta, ranking top 10 persistente, sonidos y formulario de contacto validado. Proyecto final de Desarrollo y Arquitecturas Web.',
+    tech: ['HTML5', 'CSS3', 'JavaScript', 'LocalStorage'],
+    repo: 'https://github.com/AlvaroCastellarin/MundialQuiz',
+    demo: 'https://alvarocastellarin.github.io/MundialQuiz/',
+  },
+  {
+    title: 'Rust-eze: dashboard de ventas',
+    description:
+      'Tablero de control para un concesionario de autos ficticio: gráficos de ventas mensuales, anuales y por marca filtrados por sucursal, con login y registro de usuarios con contraseñas hasheadas (PBKDF2). Trabajo final de Bases de Datos Aplicadas.',
+    tech: ['C#', '.NET Framework', 'Windows Forms', 'SQL Server', 'ADO.NET'],
+    repo: 'https://github.com/AlvaroCastellarin/TpFinalBDA',
+  },
+  {
     title: 'API REST de Biblioteca',
     description:
       'Web API para gestionar autores, libros y comentarios, con relación muchos a muchos entre autores y libros, DTOs, validaciones personalizadas y registro/login de usuarios con tokens JWT.',
@@ -46,24 +61,7 @@ export const projects: {
     description:
       'Backend desarrollado en la materia Desarrollo y Metodologías Web: CRUD completo sobre MongoDB, middlewares propios y validación de datos de entrada con esquemas de Zod.',
     tech: ['Node.js', 'Express', 'TypeScript', 'MongoDB', 'Mongoose', 'Zod'],
-    // TODO(Alvaro): link al repo de la materia si es público.
-    repo: 'https://github.com/AlvaroCastellarin',
-  },
-  {
-    title: 'Prácticas de HTML y CSS',
-    description:
-      'Colección de ejercicios de maquetado: estructura semántica, formularios, rutas, imágenes, listas y estilos, que fueron la base de este portfolio.',
-    tech: ['HTML5', 'CSS3'],
-    repo: 'https://github.com/AlvaroCastellarin/Cursos/tree/main/Curso%20HTML%20y%20CSS',
-  },
-  {
-    title: 'Este portfolio',
-    description:
-      'Sitio personal one-page, responsive, con modo claro/oscuro, formulario de contacto validado y animaciones que respetan prefers-reduced-motion.',
-    tech: ['Astro', 'Tailwind CSS', 'TypeScript', 'Render'],
-    // TODO(Alvaro): actualizá los links cuando crees el repo y el deploy.
-    repo: 'https://github.com/AlvaroCastellarin/portfolio',
-    demo: 'https://portfolio-alvaro-castellarin.onrender.com',
+    repo: 'https://github.com/AlvaroCastellarin/mdw-2026',
   },
 ];
 

@@ -34,17 +34,21 @@ const errorClass = 'mt-1 min-h-5 text-sm text-red-700 dark:text-red-400';
             {profile.github.replace('https://', '')}
           </a>
         </li>
-        <li>
-          <span class="block text-sm text-slate-500 dark:text-slate-400">LinkedIn</span>
-          <a
-            href={profile.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="font-semibold break-all text-indigo-700 underline-offset-4 hover:underline dark:text-indigo-300"
-          >
-            {profile.linkedin.replace('https://www.', '')}
-          </a>
-        </li>
+        {
+          profile.linkedin && (
+            <li>
+              <span class="block text-sm text-slate-500 dark:text-slate-400">LinkedIn</span>
+              <a
+                href={profile.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="font-semibold break-all text-indigo-700 underline-offset-4 hover:underline dark:text-indigo-300"
+              >
+                {profile.linkedin.replace('https://www.', '')}
+              </a>
+            </li>
+          )
+        }
       </ul>
     </div>
 
