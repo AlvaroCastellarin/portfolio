@@ -4,12 +4,12 @@ export const profile = {
   name: 'Alvaro Castellarin',
   role: 'Desarrollador Full Stack',
   tagline:
-    'Estudiante de 4to año en la UAI. Construyo APIs REST y sitios web accesibles, del backend a la interfaz.',
-  // TODO(Alvaro): reescribí la bio con tus palabras (el TP pide que la escriba el alumno).
+    'Estudiante de Ingeniería en Sistemas en la UAI. Desarrollo aplicaciones web de punta a punta, desde la base de datos hasta la interfaz.',
   bio: [
-    'Soy estudiante de 4to año en la Universidad Abierta Interamericana (UAI) y me interesa el desarrollo web de punta a punta.',
-    'Trabajé con .NET y Node.js del lado del servidor, diseñando APIs REST con autenticación, validación y bases de datos relacionales y NoSQL.',
-    'Hoy estoy profundizando en React y busco mi primera experiencia profesional como desarrollador.',
+    'Soy estudiante de 4to año de Ingeniería en Sistemas en la Universidad Abierta Interamericana (UAI) y me apasiona el desarrollo Full Stack.',
+    'Trabajé con C# y .NET, Node.js y SQL Server en proyectos de la facultad, y complemento la cursada aprendiendo por mi cuenta con cursos como el de APIs REST en .NET.',
+    'Me siento cómodo trabajando en equipo y asumiendo roles de liderazgo para organizar tareas y sacar los proyectos adelante.',
+    'Hoy busco una pasantía donde aportar lo que sé y seguir creciendo como desarrollador.',
   ],
   email: 'alvaro.castellarin2003@gmail.com',
   github: 'https://github.com/AlvaroCastellarin',
@@ -22,7 +22,7 @@ export const profile = {
 
 export const skills: { category: string; items: string[] }[] = [
   { category: 'Frontend', items: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React', 'Astro', 'Tailwind CSS'] },
-  { category: 'Backend', items: ['C# / .NET', 'ASP.NET Core Web API', 'Entity Framework Core', 'Node.js', 'Express', 'JWT'] },
+  { category: 'Backend', items: ['C# / .NET', 'ASP.NET Core Web API', 'Entity Framework Core', 'Windows Forms', 'Node.js', 'Express', 'JWT'] },
   { category: 'Bases de datos', items: ['SQL Server', 'MongoDB', 'Mongoose'] },
   { category: 'Herramientas', items: ['Git', 'GitHub', 'Visual Studio', 'VS Code', 'Postman', 'Render'] },
 ];
