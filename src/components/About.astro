@@ -1,31 +1,37 @@
 ---
 import { profile, skills } from '../data/site';
+import SectionTitle from './SectionTitle.astro';
+
+const fileName = (category: string) =>
+  category
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/\s+/g, '_') + '.json';
 ---
 
-<section id="sobre-mi" class="bg-slate-50 py-20 dark:bg-slate-900/50">
-  <div class="mx-auto max-w-5xl px-4 sm:px-6">
-    <h2 class="reveal text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Sobre mí</h2>
+<section id="sobre-mi" class="mx-auto max-w-6xl px-4 py-16 sm:px-6 md:py-20">
+  <SectionTitle num="01" slug="sobre-mí" title="Quién soy" />
 
-    <div class="reveal mt-6 max-w-3xl space-y-3 text-lg leading-relaxed text-slate-700 dark:text-slate-300">
-      {profile.bio.map((p) => <p>{p}</p>)}
-    </div>
+  <div class="reveal mt-6 max-w-3xl space-y-3 text-lg leading-relaxed text-muted">
+    {profile.bio.map((p) => <p>{p}</p>)}
+  </div>
 
-    <h3 class="reveal mt-12 text-xl font-semibold text-slate-900 dark:text-white">Habilidades y tecnologías</h3>
-    <div class="mt-6 grid gap-5 sm:grid-cols-2">
-      {
-        skills.map((group) => (
-          <div class="reveal rounded-xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
-            <h4 class="font-semibold text-indigo-700 dark:text-indigo-400">{group.category}</h4>
-            <ul class="mt-3 flex flex-wrap gap-2">
-              {group.items.map((item) => (
-                <li class="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700 dark:bg-slate-800 dark:text-slate-300">
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))
-      }
-    </div>
+  <h3 class="reveal mt-12 font-mono text-acc">$ ls ./habilidades</h3>
+  <div class="mt-5 grid gap-4 sm:grid-cols-2">
+    {
+      skills.map((group) => (
+        <div class="reveal overflow-hidden rounded-xl border border-line bg-panel">
+          <h4 class="border-b border-line px-4 py-2.5 font-mono text-xs text-muted">
+            <span class="text-ink">{group.category}</span> · {fileName(group.category)}
+          </h4>
+          <ul class="flex flex-wrap gap-2 p-4">
+            {group.items.map((item) => (
+              <li class="rounded-md border border-line px-2.5 py-1 font-mono text-xs text-acc-2">{item}</li>
+            ))}
+          </ul>
+        </div>
+      ))
+    }
   </div>
 </section>

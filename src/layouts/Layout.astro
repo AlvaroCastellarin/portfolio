@@ -17,15 +17,21 @@ const description = profile.tagline;
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <meta name="theme-color" content="#4f46e5" />
-    <!-- Aplica el tema antes de pintar para evitar el parpadeo -->
+    <meta name="theme-color" content="#0b0f0c" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap"
+    />
+    <!-- Aplica el tema antes de pintar para evitar el parpadeo (oscuro por defecto) -->
     <script is:inline>
       (() => {
         let theme;
         try {
           theme = localStorage.getItem('theme');
         } catch {}
-        if (!theme) theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        if (!theme) theme = 'dark';
         document.documentElement.classList.toggle('dark', theme === 'dark');
       })();
     </script>
@@ -33,7 +39,7 @@ const description = profile.tagline;
   <body class="min-h-screen overflow-x-hidden">
     <a
       href="#contenido"
-      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-indigo-600 focus:px-4 focus:py-2 focus:text-white"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-acc focus:px-4 focus:py-2 focus:font-mono focus:text-on-acc"
     >
       Saltar al contenido
     </a>

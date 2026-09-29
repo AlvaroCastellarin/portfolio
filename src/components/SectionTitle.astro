@@ -1,0 +1,13 @@
+---
+interface Props {
+  num: string;
+  slug: string;
+  title: string;
+}
+const { num, slug, title } = Astro.props;
+---
+
+<div class="reveal">
+  <p class="font-mono text-sm text-acc">// {num}. {slug}</p>
+  <h2 class="mt-2 text-3xl font-extrabold tracking-tight sm:text-4xl">{title}</h2>
+</div>
