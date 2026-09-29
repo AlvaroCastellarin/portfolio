@@ -2,14 +2,14 @@
 
 Portfolio personal one-page, desarrollado para la materia **Desarrollo y Metodologías Web** (UAI).
 
-- **Sitio publicado:** https://portfolio-alvaro-castellarin.vercel.app <!-- actualizar con la URL real de Vercel -->
+- **Sitio publicado:** https://portfolio-alvaro-castellarin.onrender.com 
 
 ## Stack
 
 - [Astro 7](https://astro.build) — generador de sitios estáticos (HTML sin JS innecesario).
 - [Tailwind CSS 4](https://tailwindcss.com) — estilos utilitarios, integrado vía `@tailwindcss/vite`.
 - TypeScript para los scripts del cliente (menú, tema, validación del formulario).
-- Deploy en [Vercel](https://vercel.com).
+- Deploy como Static Site en [Render](https://render.com).
 
 ## Funcionalidades
 
@@ -57,5 +57,9 @@ Para habilitar el botón de CV, agregar `public/cv-alvaro-castellarin.pdf` y pon
 
 ## Deploy
 
-Vercel detecta Astro automáticamente: importar el repositorio en vercel.com → *Add New Project* → *Deploy*.
-Cada push a `main` genera un nuevo deploy.
+Publicado como **Static Site** en [Render](https://render.com), configurado en `render.yaml`:
+
+- Build command: `npm ci && npm run build`
+- Publish directory: `dist`
+
+Cada push a `main` genera un nuevo deploy automáticamente.

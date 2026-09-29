@@ -24,7 +24,7 @@ export const skills: { category: string; items: string[] }[] = [
   { category: 'Frontend', items: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React', 'Astro', 'Tailwind CSS'] },
   { category: 'Backend', items: ['C# / .NET', 'ASP.NET Core Web API', 'Entity Framework Core', 'Node.js', 'Express', 'JWT'] },
   { category: 'Bases de datos', items: ['SQL Server', 'MongoDB', 'Mongoose'] },
-  { category: 'Herramientas', items: ['Git', 'GitHub', 'Visual Studio', 'VS Code', 'Postman', 'Vercel'] },
+  { category: 'Herramientas', items: ['Git', 'GitHub', 'Visual Studio', 'VS Code', 'Postman', 'Render'] },
 ];
 
 export const projects: {
@@ -60,10 +60,10 @@ export const projects: {
     title: 'Este portfolio',
     description:
       'Sitio personal one-page, responsive, con modo claro/oscuro, formulario de contacto validado y animaciones que respetan prefers-reduced-motion.',
-    tech: ['Astro', 'Tailwind CSS', 'TypeScript', 'Vercel'],
+    tech: ['Astro', 'Tailwind CSS', 'TypeScript', 'Render'],
     // TODO(Alvaro): actualizá los links cuando crees el repo y el deploy.
     repo: 'https://github.com/AlvaroCastellarin/portfolio',
-    demo: 'https://portfolio-alvaro-castellarin.vercel.app',
+    demo: 'https://portfolio-alvaro-castellarin.onrender.com',
   },
 ];
 
