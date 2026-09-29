@@ -18,16 +18,21 @@ import SectionTitle from './SectionTitle.astro';
                 <li>{t}</li>
               ))}
             </ul>
-            <div class="mt-5 flex gap-5 font-mono text-sm">
-              {p.repo && (
-                <a href={p.repo} target="_blank" rel="noopener noreferrer" class="text-acc hover:underline">
-                  <span aria-hidden="true">→ </span>repo
+            <div class="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3 font-mono text-sm">
+              {p.demo && (
+                <a
+                  href={p.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="border border-acc bg-acc px-4 py-2 font-semibold text-on-acc transition hover:opacity-90"
+                >
+                  <span aria-hidden="true">▶ </span>ver demo en vivo
                   <span class="sr-only"> de {p.title} (abre en una pestaña nueva)</span>
                 </a>
               )}
-              {p.demo && (
-                <a href={p.demo} target="_blank" rel="noopener noreferrer" class="text-acc hover:underline">
-                  <span aria-hidden="true">→ </span>demo
+              {p.repo && (
+                <a href={p.repo} target="_blank" rel="noopener noreferrer" class="text-acc hover:underline">
+                  <span aria-hidden="true">→ </span>repo
                   <span class="sr-only"> de {p.title} (abre en una pestaña nueva)</span>
                 </a>
               )}
