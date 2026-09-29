@@ -19,7 +19,7 @@ Portfolio personal one-page, desarrollado para la materia **Desarrollo y Metodol
 - Modo claro / oscuro (respeta la preferencia del sistema y se recuerda la elección).
 - Animaciones de aparición sutiles que se desactivan con `prefers-reduced-motion`.
 - Formulario de contacto con validación de campos accesible (mensajes con `aria-live`, `aria-invalid`).
-- CV descargable en PDF (se activa al agregar el archivo, ver abajo).
+- CV descargable en PDF (fuente en `cv/cv.html`).
 
 ## Correrlo localmente
 
@@ -53,7 +53,7 @@ public/                 # favicon y CV en PDF
 ```
 
 Para actualizar textos, proyectos o links alcanza con editar `src/data/site.ts`.
-Para habilitar el botón de CV, agregar `public/cv-alvaro-castellarin.pdf` y poner `hasCv: true`.
+Para actualizar el CV, editar `cv/cv.html`, abrirlo en Chrome/Edge → Imprimir → Guardar como PDF (sin encabezados) y reemplazar `public/cv-alvaro-castellarin.pdf`.
 
 ## Deploy
 

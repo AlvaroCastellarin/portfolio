@@ -15,8 +15,7 @@ export const profile = {
   github: 'https://github.com/AlvaroCastellarin',
   // Dejalo vacío para ocultarlo; pegá la URL cuando tengas perfil de LinkedIn.
   linkedin: '',
-  // Poné tu CV en public/cv-alvaro-castellarin.pdf y cambiá esto a true.
-  hasCv: false,
+  hasCv: true,
   cvPath: '/cv-alvaro-castellarin.pdf',
 };
 

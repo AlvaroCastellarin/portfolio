@@ -1,0 +1,126 @@
+<!doctype html>
+<!-- Fuente del CV. Para regenerar el PDF: abrir en Chrome/Edge > Imprimir > Guardar como PDF (sin encabezados) en public/cv-alvaro-castellarin.pdf -->
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>CV - Alvaro Castellarin</title>
+<style>
+  @page { size: A4; margin: 10mm 15mm; }
+  * { box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Roboto, Arial, sans-serif; color: #1e293b; font-size: 10pt; line-height: 1.35; margin: 0; }
+  header { border-bottom: 2px solid #4f46e5; padding-bottom: 8px; margin-bottom: 12px; }
+  h1 { font-size: 22pt; margin: 0; color: #0f172a; letter-spacing: -0.3px; }
+  .role { font-size: 12pt; color: #4f46e5; font-weight: 600; margin: 2px 0 6px; }
+  .contact { font-size: 9.5pt; color: #475569; }
+  .contact a { color: #475569; text-decoration: none; }
+  .contact span + span::before { content: "·"; margin: 0 7px; color: #94a3b8; }
+  h2 { font-size: 11pt; text-transform: uppercase; letter-spacing: 1px; color: #4f46e5; margin: 10px 0 5px; border-bottom: 1px solid #e2e8f0; padding-bottom: 2px; }
+  p { margin: 0 0 4px; }
+  ul { margin: 0; padding-left: 16px; }
+  li { margin-bottom: 2px; }
+  .item { margin-bottom: 5px; break-inside: avoid; }
+  .item-head { display: flex; justify-content: space-between; gap: 12px; }
+  .item-title { font-weight: 600; color: #0f172a; }
+  .muted { color: #64748b; font-size: 9.5pt; }
+  .tech { color: #4f46e5; font-size: 9pt; }
+  .skills { display: grid; grid-template-columns: 120px 1fr; gap: 2px 10px; }
+  .skills dt { font-weight: 600; }
+  .skills dd { margin: 0; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Alvaro Castellarin</h1>
+    <div class="role">Desarrollador Full Stack · Estudiante de Ingeniería en Sistemas Informáticos</div>
+    <div class="contact">
+      <span><a href="mailto:alvaro.castellarin2003@gmail.com">alvaro.castellarin2003@gmail.com</a></span>
+      <span><a href="https://github.com/AlvaroCastellarin">github.com/AlvaroCastellarin</a></span>
+      <span><a href="https://portfolio-alvaro-castellarin.onrender.com">portfolio-alvaro-castellarin.onrender.com</a></span>
+    </div>
+  </header>
+
+  <h2>Perfil</h2>
+  <p>
+    Estudiante de 4to año de Ingeniería en Sistemas Informáticos en la UAI (12 materias restantes), orientado al
+    desarrollo Full Stack. Desarrollé proyectos con C# y .NET, Node.js con TypeScript, SQL Server y JavaScript, y
+    complemento la cursada aprendiendo por mi cuenta. Persona sociable y resolutiva, con facilidad para comunicar y
+    liderar equipos. Busco una pasantía como desarrollador donde aportar y seguir creciendo.
+  </p>
+
+  <h2>Formación académica</h2>
+  <div class="item">
+    <div class="item-head">
+      <span class="item-title">Ingeniería en Sistemas Informáticos — Universidad Abierta Interamericana (UAI)</span>
+      <span class="muted">En curso</span>
+    </div>
+    <p class="muted">4to año, 12 materias cuatrimestrales restantes.</p>
+  </div>
+  <div class="item">
+    <div class="item-head"><span class="item-title">Curso de Web API RESTful con .NET</span><span class="muted">Curso online</span></div>
+  </div>
+  <p>Secundario completo.</p>
+
+  <h2>Conocimientos técnicos</h2>
+  <dl class="skills">
+    <dt>Backend</dt><dd>C# / .NET, ASP.NET Core Web API, EF Core, Windows Forms, Node.js, Express, JWT</dd>
+    <dt>Frontend</dt><dd>HTML5, CSS3, JavaScript, TypeScript, React, Astro, Tailwind CSS</dd>
+    <dt>Bases de datos</dt><dd>SQL Server (modelado, consultas, procedimientos almacenados), MongoDB, Mongoose</dd>
+    <dt>Herramientas</dt><dd>Git, GitHub, Visual Studio, VS Code, Postman, Render</dd>
+  </dl>
+
+  <h2>Proyectos</h2>
+  <div class="item">
+    <div class="item-title">MundialQuiz — juego de trivia web</div>
+    <p>Trivia sobre la historia de los Mundiales con más de 80 preguntas, sistema de vidas, bonus por velocidad y ranking persistente. Proyecto final de Desarrollo y Arquitecturas Web.</p>
+    <div class="tech">HTML5 · CSS3 · JavaScript · LocalStorage — alvarocastellarin.github.io/MundialQuiz</div>
+  </div>
+  <div class="item">
+    <div class="item-title">Rust-eze — dashboard de ventas</div>
+    <p>Tablero de control para un concesionario: gráficos de ventas mensuales, anuales y por marca por sucursal, con login y contraseñas hasheadas (PBKDF2). Trabajo final de Bases de Datos Aplicadas.</p>
+    <div class="tech">C# · .NET Framework · Windows Forms · SQL Server · ADO.NET</div>
+  </div>
+  <div class="item">
+    <div class="item-title">API REST de Biblioteca</div>
+    <p>Web API de autores, libros y comentarios con relaciones muchos a muchos, DTOs, validaciones y autenticación con JWT.</p>
+    <div class="tech">ASP.NET Core 9 · EF Core · SQL Server · Identity · JWT · AutoMapper</div>
+  </div>
+  <div class="item">
+    <div class="item-title">API con Node, Express y TypeScript</div>
+    <p>CRUD sobre MongoDB con middlewares propios y validación de datos con Zod. Materia Desarrollo y Metodologías Web.</p>
+    <div class="tech">Node.js · Express · TypeScript · MongoDB · Zod</div>
+  </div>
+
+  <h2>Experiencia laboral</h2>
+  <div class="item">
+    <div class="item-head">
+      <span class="item-title">Asistente / Cadete administrativo — Oficina particular</span>
+      <span class="muted">Trabajo de verano</span>
+    </div>
+    <ul>
+      <li>Gestiones bancarias: depósitos, cobro de cheques, extracciones y pago de servicios.</li>
+      <li>Apoyo administrativo en tareas de oficina, con manejo de trámites y responsabilidad sobre plazos.</li>
+    </ul>
+  </div>
+
+  <div class="cols">
+    <div>
+      <h2>Habilidades</h2>
+      <ul>
+        <li>Comunicación efectiva y explicaciones claras</li>
+        <li>Resolución de problemas</li>
+        <li>Liderazgo y trabajo en equipo</li>
+        <li>Facilidad de expresión en público</li>
+        <li>Organización y planificación de tareas</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Idiomas</h2>
+      <ul>
+        <li>Español: nativo</li>
+        <li>Inglés: intermedio/alto</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
